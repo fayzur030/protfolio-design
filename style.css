@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
+body {
+  background-color: #f9f9f9;
+}
 
 /* common style button */
 .common-btn {
@@ -65,6 +68,10 @@ nav ul li a {
   text-decoration: none;
   font-size: 20px;
   font-weight: 400;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #0c9bfe;
 }
 
 .nav_hero {
@@ -172,4 +179,254 @@ nav ul li a {
   color: #757575;
   line-height: 1.6;
   font-weight: 400;
+}
+.card-parent {
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card_1,
+.card_2,
+.card_3,
+.card_4 {
+  padding: 30px;
+  background-color: #ffffff;
+  height: 377px;
+}
+.card_2 div {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+
+.card_1 img,
+.card_2 img,
+.card_3 img,
+.card_4 img {
+  margin-top: 2px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 30px;
+}
+.card_1 h2,
+.card_2 h2,
+.card_3 h2,
+.card_4 h2 {
+  text-align: start;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.card_1 p,
+.card_2 p,
+.card_3 p,
+.card_4 p {
+  text-align: start;
+  font-size: 16px;
+  line-height: 1.75;
+  max-width: 201px;
+}
+
+.resume-parent {
+  margin-top: 70px;
+  padding-top: 70px;
+}
+
+.resume-parent .title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 70px;
+  padding-bottom: 20px;
+}
+
+.sector {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 45px;
+}
+.education-sector {
+  flex: 1;
+}
+.experience-sector {
+  flex: 1;
+}
+
+.sector div h1 {
+  font-size: 30px;
+  color: #474747;
+  margin-bottom: 20px;
+}
+.sector div h2 {
+  font-size: 25px;
+  color: #474747;
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 25px;
+}
+.sector div h4 {
+  font-size: 20px;
+  color: #474747;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.sector div p {
+  font-size: 16px;
+  color: #757575;
+  font-weight: 400;
+  max-width: 440px;
+  margin-top: 10px;
+}
+
+.resume-btn {
+  margin-top: 35px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.gallery-title {
+  text-align: center;
+  margin-top: 6rem;
+}
+.gallery-parent {
+  margin-top: 5rem;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: none;
+  grid-template-areas:
+    'work1 work2 work3'
+    'work4 work2 work6'
+    'work4 work5 work6';
+}
+
+.work1 {
+  grid-area: work1;
+}
+.work2 {
+  grid-area: work2;
+}
+.work3 {
+  grid-area: work3;
+}
+.work4 {
+  grid-area: work4;
+}
+.work5 {
+  grid-area: work5;
+}
+.work6 {
+  grid-area: work6;
+}
+
+.gallery-parent img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* footer */
+.footer-parent {
+  margin-top: 6rem;
+  background-color: #fff6f0;
+  padding-bottom: 50px;
+}
+
+.footer-content {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact {
+  flex: 2;
+}
+.contact-form {
+  flex: 1;
+}
+
+.left-content h1 {
+  font-size: 35px;
+  color: #181818;
+  margin-bottom: 15px;
+}
+.left-content p {
+  max-width: 562px;
+  color: #474747;
+  font-weight: 400;
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+.contact .social-link {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.contact .social-link a {
+  color: #fd6e0a;
+  background-color: #f9f9f9;
+  border: 1px solid #fd6e0a;
+  padding: 10px 14px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.contact .social-link a:hover {
+  background-color: #c9bdb5;
+  color: white;
+  border: 1px solid #c79f83;
+}
+
+.contact-form h1 {
+  font-size: 35px;
+  color: #474747;
+  margin-bottom: 20px;
+}
+
+.contact-form input {
+  width: 461px;
+  padding: 10px 12px;
+  margin-top: 10px;
+  height: 60px;
+  border: none;
+  /* outline:none */
+}
+.contact-form textarea {
+  min-width: 461px;
+  max-width: 461px;
+  padding: 10px 12px;
+  min-height: 180px;
+  margin-top: 10px;
+  height: 180px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.contact-form textarea:focus {
+  border: 2px solid #0c9bfe;
+  outline: none;
+}
+.contact-form input:focus {
+  border: 1px solid #0c9bfe;
+  outline: none;
+}
+.submit-btn {
+  padding: 14px 30px;
+  background-color: #fd6e0a;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.submit-btn:hover {
+  background-color: #9c5827;
 }
